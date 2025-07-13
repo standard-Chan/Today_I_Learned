@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/MySQL/트랜잭션.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/read committed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL/read uncommitted.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/트랜잭션.md" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/트랜잭션.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752328415741</updated>
       <workItem from="1752328416927" duration="3500000" />
-      <workItem from="1752417157327" duration="994000" />
+      <workItem from="1752417157327" duration="4264000" />
     </task>
     <servers />
   </component>
