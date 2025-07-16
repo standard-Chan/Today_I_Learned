@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/MySQL/read committed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL/read uncommitted.png" afterDir="false" />
+    <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySQL/트랜잭션.md" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL/트랜잭션.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/네트워크/IP 주소로 HTTPS에 접속할 수 없는 이유.md" beforeDir="false" afterPath="$PROJECT_DIR$/네트워크/IP 주소로 HTTPS에 접속할 수 없는 이유.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/정석찬/Desktop/일일 공부 내용",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/정석찬/Desktop/일일 공부 내용&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\git\img" />
+      <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\MySQL\img" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,11 +77,32 @@
       <option name="presentableId" value="Default" />
       <updated>1752328415741</updated>
       <workItem from="1752328416927" duration="3500000" />
-      <workItem from="1752417157327" duration="4264000" />
+      <workItem from="1752417157327" duration="4595000" />
+      <workItem from="1752454196890" duration="480000" />
+      <workItem from="1752455357687" duration="242000" />
+      <workItem from="1752458557468" duration="4715000" />
+      <workItem from="1752469476873" duration="3429000" />
+      <workItem from="1752473077205" duration="106000" />
+      <workItem from="1752493321878" duration="1074000" />
+      <workItem from="1752552848379" duration="6000" />
+      <workItem from="1752589490281" duration="200000" />
     </task>
+    <task id="LOCAL-00001" summary="IDE">
+      <option name="closed" value="true" />
+      <created>1752470043771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752470043771</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IDE" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDE" />
   </component>
 </project>
