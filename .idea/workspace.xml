@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
-      <change afterPath="$PROJECT_DIR$/Java/JVM의 메모리.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring/Bean 객체.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,8 @@
       <workItem from="1752552848379" duration="6000" />
       <workItem from="1752589490281" duration="200000" />
       <workItem from="1752677979385" duration="64000" />
-      <workItem from="1752759601842" duration="121000" />
+      <workItem from="1752759601842" duration="146000" />
+      <workItem from="1752842128685" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="IDE">
       <option name="closed" value="true" />
