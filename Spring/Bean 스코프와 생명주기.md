@@ -98,17 +98,100 @@ public class ThreadTest {
 
 }
 ```
+```java
+public class DateFormatter implements Formatter<Date> {
+    private SimpleDateFormat sdf;
+
+    public DateFormatter(String pattern) {
+        if (StringUtils.isEmpty(pattern)) throw new IllegalArgumentException("패턴이 비어있습니다.");
+
+        this.sdf = new SimpleDateFormat(pattern);
+    }
+
+    public String of(Date target) {
+        return sdf.format(target);
+    }
+
+    @Override
+    public Date parse(String text, Locale locale) throws ParseException {
+        return sdf.parse(text);
+    }
+
+    @Override
+    public String print(Date object, Locale locale) {
+        return "";
+    }
+}
+```
 위 코드는 스레드 설정을 대기큐 100, 코어 10로 하여 싱글톤을 참조하여 실행하는 코드이다.
-싱글톤 내부에는 sdf라는 필드가 존재함에 초점을 두고 멀티 스레드를 실행시킨다고 생각해보자.
+싱글톤 (singletonDateFormatter)의 내부에는 sdf라는 필드가 존재함에 초점을 두고 멀티 스레드를 실행시킨다고 생각해보자.
 
 `실행 결과`
 ![img.png](images/스레드충돌.png)
 
-동시에 동일한 싱글톤을 참조하면서 DateFormatter() 메서드로 sdf를 변경한다. 
-그런데 이 변경이 SimpleDateFormat() 생성자를 통해 변경되는 것이므로 바로 반영이 안되고 동시에 쓰다가 충돌이 발생한다.
-다시말해서 데이터를 쓰고있는 도중에, 다른 스레드가 데이터를 덮어써버리면서 충돌이 발생하는 것이다.
+결과를 보면, 멀티스레드에 안전하지 않다는 것을 알 수 있다.
 
-따라서 멀티 스레드 환경에서는 반드시 스레드 안전을 고려해야한다.
+이유는 동일한 Bean을 참조하면서, 멀티 스레드에 안전하지 않은 parse 메서드를 사용했기 때문이다.
+
+조금더 구체적으로 파고들어가 보자.
+
+![img.png](images/스레드-에러콘솔.png)
+
+에러 라인 중에, `at java.base/java.text.DigitList.getDouble(DigitList.java:169) ~[na:na]` 을 보자.
+
+```java
+    public final double getDouble() {
+        if (count == 0) {
+            return 0.0;
+        }
+
+        StringBuffer temp = getStringBuffer();
+        temp.append('.');
+        temp.append(digits, 0, count);
+        temp.append('E');
+        temp.append(decimalAt);
+        return Double.parseDouble(temp.toString());
+    }
+```
+
+위 코드에서 에러가 발생하였다. temp 변수는 지역변수이므로 스레드에 안전한 변수이다.
+하지만 temp가 참조하는 getStringBuffer()는 스레드에 안전하지 않을 수도 있다. 스레드 전역에서 공유하는 객체일 수도 있기 때문이다.
+getStringBuffer()를 봐보자.
+
+```java
+    private StringBuffer tempBuffer; // class private 필드
+
+    private StringBuffer getStringBuffer() {
+        if (tempBuffer == null) {
+            tempBuffer = new StringBuffer(MAX_COUNT);
+        } else {
+            tempBuffer.setLength(0);
+        }
+        return tempBuffer;
+    }
+```
+
+tempBuffer라는 클래스 필드를 공유한다. 
+즉, 하나의 클래스 당 1개의 tempBuffer를 사용하고, 
+tempBuffer가 생성되어있을 경우에는 값을 초기화하여 사용한다.
+
+여기에서 `문제`가 발생한다.
+
+A스레드와 B스레드가 동시에 작업한다고 해보자.
+A 스레드에서 tempBuffer에 값을 쓰면서 저장하는 중에
+B 스레드에서 tempBuffer를 초기화했다고 생각해보자.
+
+A 스레드에서 는 정확한 형식으로 tempBuffer에 값이 입력되어있어야 하지만,
+중간에 B스레드가 삭제를 했기때문에 형식이 정확하지 않는 문제가 발생한다.
+이로인해서 Format 에러가 발생하는 것이다.
+
+간단하게 말하자면 데이터를 쓰고있는 도중에, 다른 스레드가 데이터를 덮어써버리면서 충돌이 발생하는 것이다.
+
+`ERROR : java.lang.NumberFormatException: multiple points`
+multiple points 인것을 보면, 형식상 '.'이 1개만 있어야하는데, 스레드 A와 B가 동시에
+쓰다보니 '.'이 2개 들어가서 문제가 발생한 듯 하다.
+
+따라서 멀티 스레드 환경에서는 반드시 `스레드 안전`을 고려해야한다.
 
 ---
 ### `스레드 안전한 코드`

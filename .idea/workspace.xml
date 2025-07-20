@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
+      <change afterPath="$PROJECT_DIR$/Spring/images/스레드-에러콘솔.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/Bean 스코프와 생명주기.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/Bean 스코프와 생명주기.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,8 @@
       <workItem from="1752759601842" duration="146000" />
       <workItem from="1752842128685" duration="3156000" />
       <workItem from="1752930562584" duration="4219000" />
-      <workItem from="1752935932800" duration="144000" />
+      <workItem from="1752935932800" duration="156000" />
+      <workItem from="1752968682193" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="IDE">
       <option name="closed" value="true" />
