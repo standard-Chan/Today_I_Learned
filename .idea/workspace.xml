@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
-      <change afterPath="$PROJECT_DIR$/Spring/3. 스프링 MVC.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/images/MVC_component.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/images/mvc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring/images/mvc2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/Bean 객체.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/1. Bean 객체.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring/Bean 스코프와 생명주기.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/2. Bean Scope.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/1. Bean 객체.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/1. Bean객체.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/3. 스프링 MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/3. 스프링 MVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/images/mvc2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/images/mvc2.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <workItem from="1752968682193" duration="2249000" />
       <workItem from="1753016670518" duration="121000" />
       <workItem from="1753105030144" duration="70000" />
-      <workItem from="1753190139347" duration="3089000" />
+      <workItem from="1753190139347" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="IDE">
       <option name="closed" value="true" />
