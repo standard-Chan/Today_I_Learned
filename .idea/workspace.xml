@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
-      <change afterPath="$PROJECT_DIR$/Spring/5. EntityManager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spring/5. EntityManager.md" beforeDir="false" afterPath="$PROJECT_DIR$/Spring/5. EntityManager.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1753373216194" duration="265000" />
       <workItem from="1753456884168" duration="396000" />
       <workItem from="1753605001566" duration="2922000" />
-      <workItem from="1753712973530" duration="1653000" />
+      <workItem from="1753712973530" duration="1820000" />
     </task>
     <task id="LOCAL-00001" summary="IDE">
       <option name="closed" value="true" />
