@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74ac85d-9655-41f7-8eb9-c8d9b5f152b3" name="변경" comment="IDE">
-      <change afterPath="$PROJECT_DIR$/기타/벡터DB.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/HTTP 발전과정.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/img/http11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/img/http2-hpack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/img/http2-stream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/img/http2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/네트워크/img/tls.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +65,7 @@
       <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\Spring\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\네트워크\img" />
       <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\Spring\images" />
       <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\git\img" />
       <recent name="C:\Users\정석찬\Desktop\일일 공부 내용\MySQL\img" />
@@ -108,7 +113,10 @@
       <workItem from="1753605001566" duration="2922000" />
       <workItem from="1753712973530" duration="1838000" />
       <workItem from="1753798206740" duration="2979000" />
-      <workItem from="1754403844521" duration="370000" />
+      <workItem from="1754403844521" duration="387000" />
+      <workItem from="1754504055038" duration="624000" />
+      <workItem from="1754646051949" duration="9000" />
+      <workItem from="1756369610140" duration="248000" />
     </task>
     <task id="LOCAL-00001" summary="IDE">
       <option name="closed" value="true" />
